@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insights</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>📊 Insights</h1>
+
+<div class="card">
+    {% for i in insights %}
+        <p>• {{ i }}</p>
+    {% endfor %}
+</div>
+
+</body>
+</html>
